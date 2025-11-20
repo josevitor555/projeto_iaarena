@@ -1,5 +1,5 @@
 // import React from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
@@ -271,6 +271,16 @@ const Demonstration = () => {
                     transition={{ duration: 0.5, delay: 0.1 }}
                 >
                     Ideação inicial do MVP, onde humanos e inteligências artificiais se enfrentam para criar, debater e evoluir ideias.
+                </motion.p>
+
+                {/* Frase motivacional adicionada */}
+                <motion.p 
+                    className="text-base md:text-base text-gray-500 mt-4 text-center font-normal max-w-2xl mx-auto leading-relaxed italic"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.15 }}
+                >
+                    "Ideias não surgem totalmente formadas. Elas só se tornam claras à medida que você trabalha nelas. Você só precisa começar" - Mark Zuckerberg.
                 </motion.p>
 
                 {/* CENTER CONTAINER (Requested Modification) */}
