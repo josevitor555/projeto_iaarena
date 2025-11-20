@@ -2,18 +2,24 @@
 // Style css
 import './App.css'
 
-import { Button } from "@/components/ui/button"
+// Import react router dom
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// Home page
+import Home from './pages/Home';
 
 const App = () => {
 
   return (
-    <div className="flex flex-col gap-2">
-      <h1 className='text-3xl font-semibold underline'>
-        Bem vindo a landing page do IAArena!
-      </h1>
-      <Button>Click me</Button>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+
+        {/* Home router */}
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/about" element={<h1>Sobre nós</h1>} /> */}
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
