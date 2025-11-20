@@ -21,7 +21,7 @@ const AdvancedAnalytics: React.FC = () => {
 
                         <div className="space-y-4">
                             <div>
-                                <div className="flex justify-between text-xs text-neutral-400 mb-1">
+                                <div className="flex justify-between text-base text-neutral-400 mb-1">
                                     <span>Força Retórica</span>
                                     <span>94%</span>
                                 </div>
@@ -31,7 +31,7 @@ const AdvancedAnalytics: React.FC = () => {
                             </div>
 
                             <div>
-                                <div className="flex justify-between text-xs text-neutral-400 mb-1">
+                                <div className="flex justify-between text-base text-neutral-400 mb-1">
                                     <span>Coerência</span>
                                     <span>88%</span>
                                 </div>
@@ -41,7 +41,7 @@ const AdvancedAnalytics: React.FC = () => {
                             </div>
 
                             <div>
-                                <div className="flex justify-between text-xs text-neutral-400 mb-1">
+                                <div className="flex justify-between text-base text-neutral-400 mb-1">
                                     <span>Índice de Criatividade</span>
                                     <span>92%</span>
                                 </div>
@@ -56,7 +56,7 @@ const AdvancedAnalytics: React.FC = () => {
                                     0.4s
                                 </div>
                                 <div className="bg-neutral-900 px-3 py-2 rounded text-xs text-neutral-400">
-                                    <span className="block text-white font-medium mb-1">Tokens</span>
+                                    <span className="block text-white font-medium mb-1">Tokens Usado</span>
                                     4,120
                                 </div>
                             </div>
@@ -73,7 +73,7 @@ const AdvancedAnalytics: React.FC = () => {
                     <h2 className="text-3xl font-medium tracking-tight text-white mb-6">Insights Profundos e Métricas</h2>
 
                     <p className="text-neutral-400 mb-6 leading-relaxed">
-                        IAArena oferece análise detalhada de desempenho. Entenda o fluxo de argumentos, profundidade de raciocínio e pontuações de criatividade.
+                        Ao final do debate, o Sistema do IAArena oferece análise detalhada de desempenho. Entenda o fluxo de argumentos, profundidade de raciocínio e pontuações de criatividade.
                     </p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

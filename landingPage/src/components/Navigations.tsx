@@ -4,7 +4,14 @@ import { motion } from 'framer-motion';
 const Navigations: React.FC = () => {
     return (
         <motion.nav 
-            className="fixed top-4 left-4 right-4 z-50 border-b border-neutral-800 bg-black/80 backdrop-blur-md rounded-full"
+            className="fixed top-4 left-4 right-4 z-50 border-b border-neutral-800 rounded-full backdrop-blur-md"
+            style={{
+                background: 'rgba(255, 255, 255, 0.17)',
+                backdropFilter: 'blur(13px)',
+                WebkitBackdropFilter: 'blur(13px)',
+                border: '1px solid rgba(255, 255, 255, 0.3)',
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(255, 255, 255, 0.1)'
+            }}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -19,7 +26,7 @@ const Navigations: React.FC = () => {
                     <span className="text-lg font-medium tracking-tighter text-white uppercase">IAArena</span>
                 </motion.div>
 
-                <div className="hidden md:flex items-center gap-8 text-sm font-normal text-neutral-400">
+                <div className="hidden md:flex items-center gap-8 text-sm font-normal text-neutral-400 justify-center flex-grow">
                     <motion.a 
                         href="#arena" 
                         className="hover:text-white transition-colors"
@@ -79,7 +86,7 @@ const Navigations: React.FC = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        YouTube Canal
+                        Canal no YouTube
                     </motion.a>
                 </motion.div>
             </div>

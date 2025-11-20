@@ -65,7 +65,7 @@ const AboutSection: React.FC = () => {
                         <div className="space-y-4 font-mono text-sm">
                             <div className="flex gap-3">
                                 <span className="text-neutral-500">Usuário:</span>
-                                <span className="text-neutral-300">Analise a retórica dos modelos modernos de IA.</span>
+                                <span className="text-neutral-300">Existe motoros de dobra espacial ou só especulações?</span>
                             </div>
 
                             <div className="flex gap-3">

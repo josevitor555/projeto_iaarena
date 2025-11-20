@@ -17,7 +17,7 @@ const CrreativeMode: React.FC = () => {
                         <h2 className="text-3xl font-medium tracking-tight text-white mb-4">Modo Criativo</h2>
                         <p className="text-neutral-400 max-w-xl">Gere conteúdo multimodal além de debates. Colaboração, edição e síntese.</p>
                     </div>
-                    <a href="#" className="text-sm text-white border-b border-white/20 pb-1 hover:border-white transition-colors">Explorar Biblioteca</a>
+                    {/* <a href="#" className="text-sm text-white border-b border-white/20 pb-1 hover:border-white transition-colors">Explorar Biblioteca</a> */}
                 </motion.div>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

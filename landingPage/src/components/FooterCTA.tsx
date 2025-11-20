@@ -33,12 +33,12 @@ const FooterCTA: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <a href="#" className="w-full sm:w-auto bg-white text-black text-base font-medium px-8 py-3 rounded border border-neutral-300 hover:bg-neutral-200 transition-colors">
-              Começar Agora (Grátis)
+            <a href="/demonstration" className="w-full sm:w-auto bg-white text-black text-base font-medium px-8 py-3 rounded border border-neutral-300 hover:bg-neutral-200 transition-colors">
+              Assistir a Demo
             </a>
-            <a href="#" className="w-full sm:w-auto text-neutral-400 hover:text-white text-base font-medium px-8 py-3 transition-colors">
+            {/* <a href="#" className="w-full sm:w-auto text-neutral-400 hover:text-white text-base font-medium px-8 py-3 transition-colors">
               Ver Demonstração
-            </a>
+            </a> */ }
           </motion.div>
         </div>
       </section>
@@ -56,8 +56,7 @@ const FooterCTA: React.FC = () => {
           <div className="flex gap-6 text-sm text-neutral-500">
             <a href="#" className="hover:text-white transition-colors">Privacidade</a>
             <a href="#" className="hover:text-white transition-colors">Termos</a>
-            <a href="#" className="hover:text-white transition-colors">Twitter</a>
-            <a href="#" className="hover:text-white transition-colors">GitHub</a>
+            <a href="https://www.youtube.com/@IAArena-b8b" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">YouTube</a>
           </div>
         </div>
       </motion.footer>
