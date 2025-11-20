@@ -274,14 +274,14 @@ const Demonstration = () => {
                 </motion.p>
 
                 {/* Frase motivacional adicionada */}
-                <motion.p 
+                {/* <motion.p 
                     className="text-base md:text-base text-gray-500 mt-4 text-center font-normal max-w-2xl mx-auto leading-relaxed italic"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.15 }}
                 >
                     "Ideias não surgem totalmente formadas. Elas só se tornam claras à medida que você trabalha nelas. Você só precisa começar" - Mark Zuckerberg.
-                </motion.p>
+                </motion.p> */}
 
                 {/* CENTER CONTAINER (Requested Modification) */}
                 <motion.div 
