@@ -2,12 +2,17 @@ import StyledButton from './uiverse/StyledButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMicrophone, faLayerGroup, faMicrochip, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
+import Spline from '@splinetool/react-spline';
 
 const HeroSection = () => {
   return (
     <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 border-b border-neutral-900 overflow-hidden">
-      {/* Background Grid Effect */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
+      {/* Spline Animation */}
+      <div className="absolute inset-0 z-0 opacity-30">
+        <Spline
+          scene="https://prod.spline.design/E2anXrKvWs2otvhA/scene.splinecode" 
+        />
+      </div>
 
       <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
         <motion.div 

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Navigations: React.FC = () => {
     return (
         <motion.nav 
-            className="fixed top-0 w-full z-50 border-b border-neutral-800 bg-black/80 backdrop-blur-md"
+            className="fixed top-4 left-4 right-4 z-50 border-b border-neutral-800 bg-black/80 backdrop-blur-md rounded-full"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -75,7 +75,7 @@ const Navigations: React.FC = () => {
                         href="https://www.youtube.com/@IAArena-b8b" 
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-white text-black text-sm font-medium px-4 py-2 rounded border border-neutral-300 hover:bg-neutral-200 transition-colors"
+                        className="bg-white text-black text-sm font-medium px-4 py-2 rounded-full border border-neutral-300 hover:bg-neutral-200 transition-colors"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
