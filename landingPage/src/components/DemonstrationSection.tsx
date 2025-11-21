@@ -76,13 +76,19 @@ const DemonstrationSection: React.FC = () => {
             type: 'image',
             src: '/logo.png',
             alt: 'Logo do IAArena - Versão Alternativa'
+        },
+        {
+            id: 13,
+            type: 'video',
+            src: '/Apresentação do IAArena.mp4',
+            alt: 'Vídeo de Demonstração do IAArena'
         }
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [direction, setDirection] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [modalImage, setModalImage] = useState({ src: '', alt: '' });
+    const [modalImage, setModalImage] = useState<{src: string, alt: string, type?: string}>({ src: '', alt: '' });
 
     // Funções para navegar no carrossel
     const goToNext = () => {
@@ -140,7 +146,7 @@ const DemonstrationSection: React.FC = () => {
     };
 
     // Abrir modal com imagem
-    const openModal = (image: { src: string; alt: string }) => {
+    const openModal = (image: { src: string; alt: string; type?: string }) => {
         setModalImage(image);
         setIsModalOpen(true);
     };
@@ -240,11 +246,23 @@ const DemonstrationSection: React.FC = () => {
                                         onClick={() => openModal(carouselItems[currentIndex])}
                                     >
                                         <div className="relative z-10 grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 ease-in-out cursor-pointer">
-                                            <img
-                                                src={carouselItems[currentIndex].src}
-                                                alt={carouselItems[currentIndex].alt}
-                                                className="w-64 h-auto object-cover shadow-2xl shadow-black/50 ring-1 ring-white/10"
-                                            />
+                                            {carouselItems[currentIndex].type === 'video' ? (
+                                                <video
+                                                    src={carouselItems[currentIndex].src}
+                                                    title={carouselItems[currentIndex].alt}
+                                                    className="w-64 h-auto object-cover shadow-2xl shadow-black/50 ring-1 ring-white/10"
+                                                    controls
+                                                    muted
+                                                    autoPlay
+                                                    loop
+                                                />
+                                            ) : (
+                                                <img
+                                                    src={carouselItems[currentIndex].src}
+                                                    alt={carouselItems[currentIndex].alt}
+                                                    className="w-64 h-auto object-cover shadow-2xl shadow-black/50 ring-1 ring-white/10"
+                                                />
+                                            )}
                                         </div>
                                     </motion.div>
                                 </AnimatePresence>
@@ -319,11 +337,22 @@ const DemonstrationSection: React.FC = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                                 </svg>
                             </button>
-                            <img
-                                src={modalImage.src}
-                                alt={modalImage.alt}
-                                className="w-full h-full object-contain rounded-lg"
-                            />
+                            {modalImage.type === 'video' ? (
+                                <video
+                                    src={modalImage.src}
+                                    title={modalImage.alt}
+                                    className="w-full h-full object-contain rounded-lg"
+                                    controls
+                                    autoPlay
+                                    loop
+                                />
+                            ) : (
+                                <img
+                                    src={modalImage.src}
+                                    alt={modalImage.alt}
+                                    className="w-full h-full object-contain rounded-lg"
+                                />
+                            )}
                             <div className="absolute bottom-4 left-0 right-0 text-center text-white text-sm bg-black/50 py-2 px-4 rounded">
                                 {modalImage.alt}
                             </div>

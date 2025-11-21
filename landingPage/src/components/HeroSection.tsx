@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 border-b border-neutral-900 overflow-hidden">
       {/* Spline Animation */}
-      <div className="absolute inset-0 z-0 opacity-30">
+      <div className="absolute inset-0 z-0 opacity-30 pointer-events-none">
         <Spline
           scene="https://prod.spline.design/E2anXrKvWs2otvhA/scene.splinecode" 
         />
@@ -52,7 +52,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <a href="#demonstration">
+          <a href="#demonstration" onMouseDown={(e) => e.preventDefault()}>
             <StyledButton>Assistir a Demo</StyledButton>
           </a>
           <a href="#arena" className="w-full sm:w-auto bg-transparent text-white text-base font-semibold px-8 py-3 rounded border border-neutral-800 hover:bg-neutral-900 hover:border-neutral-700 transition-colors flex items-center justify-center gap-2">

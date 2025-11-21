@@ -30,7 +30,7 @@ const StyledButton: React.FC<StyledButtonProps> = ({ children, onClick }) => {
               0 0 0 2 0" />
           </filter>
         </svg>
-        <button className="real-button" onClick={onClick} />
+        <button className="real-button" onClick={onClick || (() => {})} />
         <div className="backdrop" />
         <div className="button-container">
           <div className="spin spin-blur" />
@@ -104,6 +104,7 @@ const StyledWrapper = styled.div`
     );
     background-size: 3px 3px;
     z-index: -1;
+    pointer-events: none;
   }
 
   .spin {

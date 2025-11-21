@@ -1,8 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
+interface ButtonProps {
+  children: React.ReactNode;
+  onClick?: () => void;
+}
+
 // Modified to accept children props
-const Button = ({ children }: { children: React.ReactNode }) => {
+const Button = ({ children, onClick }: ButtonProps) => {
     return (
         <StyledWrapper>
             <div>
@@ -26,7 +31,7 @@ const Button = ({ children }: { children: React.ReactNode }) => {
             0 0 0 2 0" />
                     </filter>
                 </svg>
-                <button className="real-button" />
+                <button className="real-button" onClick={onClick || (() => {})} />
                 <div className="backdrop" />
                 <div className="button-container">
                     <div className="spin spin-blur" />
@@ -102,6 +107,7 @@ const StyledWrapper = styled.div`
     );
     background-size: 3px 3px;
     z-index: -1;
+    pointer-events: none;
   }
 
   .spin {
@@ -111,6 +117,7 @@ const StyledWrapper = styled.div`
     opacity: 0.5;
     overflow: hidden;
     transition: 0.3s;
+    pointer-events: none;
   }
 
   .real-button:active ~ div .spin {
