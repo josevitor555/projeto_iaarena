@@ -26,7 +26,7 @@ const Navigations: React.FC = () => {
                     <span className="text-lg font-medium tracking-tighter text-white uppercase">IAArena</span>
                 </motion.div>
 
-                <div className="hidden md:flex items-center gap-8 text-sm font-normal text-neutral-400 justify-center flex-grow">
+                <div className="hidden md:flex items-center gap-8 text-base font-normal text-neutral-400 justify-center flex-grow">
                     <motion.a 
                         href="#arena" 
                         className="hover:text-white transition-colors"

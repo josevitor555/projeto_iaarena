@@ -52,7 +52,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <a href="/demonstration">
+          <a href="#demonstration">
             <StyledButton>Assistir a Demo</StyledButton>
           </a>
           <a href="#arena" className="w-full sm:w-auto bg-transparent text-white text-base font-semibold px-8 py-3 rounded border border-neutral-800 hover:bg-neutral-900 hover:border-neutral-700 transition-colors flex items-center justify-center gap-2">
