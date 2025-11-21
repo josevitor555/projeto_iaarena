@@ -8,6 +8,7 @@ import AIModelCatalog from '../components/AIModelCatalog';
 import AdvancedAnalytics from '../components/AdvancedAnalytics';
 import Pricing from '../components/Pricing';
 import TechnicalAudienceGrid from '../components/Technical&AudienceGrid';
+import DemonstrationSection from '../components/DemonstrationSection';
 import FooterCTA from '../components/FooterCTA';
 
 // Main component
@@ -23,6 +24,7 @@ const Home = () => {
       <AdvancedAnalytics />
       <Pricing />
       <TechnicalAudienceGrid />
+      <DemonstrationSection />
       <FooterCTA />
     </div>
   );

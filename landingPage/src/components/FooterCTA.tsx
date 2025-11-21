@@ -24,7 +24,7 @@ const FooterCTA: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            Desafie modelos avançados, refine seu pensamento e crie experiências multimodais inovadoras.
+            Desafie modelos avançados, refine seu pensamento e crie experiências multimodais com diversos modelos LLM.
           </motion.p>
           
           <motion.div 
@@ -33,12 +33,9 @@ const FooterCTA: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <a href="/demonstration" className="w-full sm:w-auto bg-white text-black text-base font-medium px-8 py-3 rounded border border-neutral-300 hover:bg-neutral-200 transition-colors">
+            <a href="#demonstration" className="w-full sm:w-auto bg-white text-black text-base font-medium px-8 py-3 rounded border border-neutral-300 hover:bg-neutral-200 transition-colors">
               Assistir a Demo
             </a>
-            {/* <a href="#" className="w-full sm:w-auto text-neutral-400 hover:text-white text-base font-medium px-8 py-3 transition-colors">
-              Ver Demonstração
-            </a> */ }
           </motion.div>
         </div>
       </section>

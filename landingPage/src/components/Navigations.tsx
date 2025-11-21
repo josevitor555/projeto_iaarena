@@ -55,6 +55,15 @@ const Navigations: React.FC = () => {
                         Modelos
                     </motion.a>
                     <motion.a 
+                        href="#demonstration" 
+                        className="hover:text-white transition-colors"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.45 }}
+                    >
+                        Demonstração
+                    </motion.a>
+                    <motion.a 
                         href="#pricing" 
                         className="hover:text-white transition-colors"
                         initial={{ opacity: 0, y: -20 }}

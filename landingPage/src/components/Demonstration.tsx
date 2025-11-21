@@ -14,7 +14,7 @@ const DemonstrationNavigation = () => {
         <nav className="fixed top-4 left-4 right-4 z-50 border-b border-neutral-800 bg-black/80 backdrop-blur-md rounded-full">
             <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                    <button 
+                    <button
                         onClick={handleGoHome}
                         className="text-white hover:text-gray-300 transition-colors p-2 rounded-full hover:bg-white/10"
                         aria-label="Voltar para a página inicial"
@@ -27,26 +27,26 @@ const DemonstrationNavigation = () => {
                 </div>
 
                 <div className="hidden md:flex items-center gap-8 text-sm font-normal text-neutral-400 justify-center flex-grow">
-                    <a 
-                        href="#arena" 
+                    <a
+                        href="#arena"
                         className="hover:text-white transition-colors"
                     >
                         Arena
                     </a>
-                    <a 
-                        href="#creative" 
+                    <a
+                        href="#creative"
                         className="hover:text-white transition-colors"
                     >
                         Criativo
                     </a>
-                    <a 
-                        href="#models" 
+                    <a
+                        href="#models"
                         className="hover:text-white transition-colors"
                     >
                         Modelos
                     </a>
-                    <a 
-                        href="#pricing" 
+                    <a
+                        href="#pricing"
                         className="hover:text-white transition-colors"
                     >
                         Preços
@@ -54,15 +54,15 @@ const DemonstrationNavigation = () => {
                 </div>
 
                 <div className="flex items-center gap-4">
-                    <a 
-                        href="/Especificacao-de-Requisitos-de-Software-IAArena.pdf" 
+                    <a
+                        href="/Especificacao-de-Requisitos-de-Software-IAArena.pdf"
                         download="Especificacao-de-Requisitos-de-Software-IAArena.pdf"
                         className="text-sm text-neutral-400 hover:text-white hidden sm:block transition-colors"
                     >
                         Documentação
                     </a>
-                    <a 
-                        href="https://www.youtube.com/@IAArena-b8b" 
+                    <a
+                        href="https://www.youtube.com/@IAArena-b8b"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-white text-black text-sm font-medium px-4 py-2 rounded-full border border-neutral-300 hover:bg-neutral-200 transition-colors"
@@ -165,7 +165,7 @@ const Demonstration = () => {
 
     const goToPrev = () => {
         setDirection(-1);
-        setCurrentIndex((prevIndex) => 
+        setCurrentIndex((prevIndex) =>
             prevIndex === 0 ? carouselItems.length - 1 : prevIndex - 1
         );
     };
@@ -175,7 +175,7 @@ const Demonstration = () => {
         const interval = setInterval(() => {
             goToNext();
         }, 5000);
-        
+
         return () => clearInterval(interval);
     }, []);
 
@@ -252,10 +252,10 @@ const Demonstration = () => {
 
             {/* Main Content */}
             <main className="flex-1 flex flex-col items-center justify-center pt-20 px-4 w-full max-w-[1400px] mx-auto">
-                
+
                 {/* Title */}
-                <motion.h1 
-                    className="text-5xl md:text-7xl font-medium text-center tracking-tight text-transparent bg-clip-text bg-linear-to-b from-white via-white to-white/60 pb-2"
+                <motion.h1
+                    className="text-4xl md:text-6xl font-medium text-center tracking-tight text-transparent bg-clip-text bg-linear-to-b from-white via-white to-white/60 pb-2"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
@@ -264,7 +264,7 @@ const Demonstration = () => {
                 </motion.h1>
 
                 {/* Subtitle */}
-                <motion.p 
+                <motion.p
                     className="text-lg md:text-xl text-gray-500 mt-6 text-center font-normal max-w-2xl mx-auto leading-relaxed"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -273,33 +273,23 @@ const Demonstration = () => {
                     Ideação inicial do MVP, onde humanos e inteligências artificiais se enfrentam para criar, debater e evoluir ideias.
                 </motion.p>
 
-                {/* Frase motivacional adicionada */}
-                {/* <motion.p 
-                    className="text-base md:text-base text-gray-500 mt-4 text-center font-normal max-w-2xl mx-auto leading-relaxed italic"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.15 }}
-                >
-                    "Ideias não surgem totalmente formadas. Elas só se tornam claras à medida que você trabalha nelas. Você só precisa começar" - Mark Zuckerberg.
-                </motion.p> */}
-
                 {/* CENTER CONTAINER (Requested Modification) */}
-                <motion.div 
+                <motion.div
                     className="w-full max-w-4xl mt-16 mb-12"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
                     {/* Parent Container: Straight borders (rounded-none or sm), Gray Tone (grayscale + border colors) */}
-                    <div className="w-full aspect-21/9 border border-neutral-800 bg-[#111111] flex items-center justify-center relative group overflow-hidden">
-                        
+                    <div className="w-full aspect-21/9 border border-neutral-800 bg-[#111111] flex items-center justify-center relative group overflow-hidden mx-auto">
+
                         {/* Decorative grid inside container */}
                         <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(#333 1px, transparent 1px)", backgroundSize: "20px 20px" }}></div>
 
                         {/* Carrossel de Imagens e Vídeos */}
                         <div className="relative w-full h-full flex items-center justify-center">
                             {/* Botão Anterior */}
-                            <button 
+                            <button
                                 onClick={goToPrev}
                                 className="absolute left-4 z-20 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors"
                                 aria-label="Imagem anterior"
@@ -309,7 +299,6 @@ const Demonstration = () => {
                                 </svg>
                             </button>
 
-                            {/* Área do Carrossel */}
                             <div className="relative w-full h-full flex items-center justify-center">
                                 <AnimatePresence initial={false} custom={direction}>
                                     <motion.div
@@ -334,7 +323,7 @@ const Demonstration = () => {
                             </div>
 
                             {/* Botão Próximo */}
-                            <button 
+                            <button
                                 onClick={goToNext}
                                 className="absolute right-4 z-20 bg-black/30 hover:bg-black/50 text-white p-2 rounded-full transition-colors"
                                 aria-label="Próxima imagem"
@@ -350,9 +339,8 @@ const Demonstration = () => {
                                     <button
                                         key={index}
                                         onClick={() => setCurrentIndex(index)}
-                                        className={`w-3 h-3 rounded-full transition-colors ${
-                                            index === currentIndex ? 'bg-white' : 'bg-white/50'
-                                        }`}
+                                        className={`w-3 h-3 rounded-full transition-colors ${index === currentIndex ? 'bg-white' : 'bg-white/50'
+                                            }`}
                                         aria-label={`Ir para a imagem ${index + 1}`}
                                     />
                                 ))}
@@ -360,7 +348,7 @@ const Demonstration = () => {
                         </div>
 
                         {/* Optional overlay text/hint like the input box had, kept subtle */}
-                        <motion.div 
+                        <motion.div
                             className="absolute bottom-4 left-4 right-4 flex items-center justify-between px-2"
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}

@@ -15,7 +15,7 @@ const AdvancedAnalytics: React.FC = () => {
                 >
                     <div className="bg-black border border-neutral-800 rounded-lg p-6 shadow-2xl">
                         <div className="flex justify-between items-center mb-6">
-                            <span className="text-sm font-medium text-white">Análise de Desempenho</span>
+                            <span className="text-base font-medium text-white">Análise de Desempenho do Gemini 3 Pro</span>
                             <FontAwesomeIcon icon={faChartBar} className="w-4 h-4 text-neutral-500" />
                         </div>
 
