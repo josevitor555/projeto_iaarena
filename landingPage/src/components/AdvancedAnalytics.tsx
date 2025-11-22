@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const AdvancedAnalytics: React.FC = () => {
     return (
-        <section className="py-24 bg-neutral-950">
+        <section className="py-24 bg-[#121212]">
             <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
                 <motion.div 
                     className="order-2 lg:order-1"
@@ -13,50 +13,50 @@ const AdvancedAnalytics: React.FC = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                    <div className="bg-black border border-neutral-800 rounded-lg p-6 shadow-2xl">
+                    <div className="bg-[#121212] border border-[#444444] rounded-lg p-6 shadow-2xl">
                         <div className="flex justify-between items-center mb-6">
-                            <span className="text-base font-medium text-white">Análise de Desempenho do Gemini 3 Pro</span>
-                            <FontAwesomeIcon icon={faChartBar} className="w-4 h-4 text-neutral-500" />
+                            <span className="text-base font-medium text-[#E0E0E0]">Análise de Desempenho do Gemini 3 Pro</span>
+                            <FontAwesomeIcon icon={faChartBar} className="w-4 h-4 text-[#444444]" />
                         </div>
 
                         <div className="space-y-4">
                             <div>
-                                <div className="flex justify-between text-base text-neutral-400 mb-1">
+                                <div className="flex justify-between text-base text-[#B0B0B0] mb-1">
                                     <span>Força Retórica</span>
                                     <span>94%</span>
                                 </div>
-                                <div className="h-1.5 bg-neutral-900 rounded-full overflow-hidden">
-                                    <div className="h-full bg-white w-[94%]"></div>
+                                <div className="h-1.5 bg-[#444444] rounded-full overflow-hidden">
+                                    <div className="h-full bg-[#E0E0E0] w-[94%]"></div>
                                 </div>
                             </div>
 
                             <div>
-                                <div className="flex justify-between text-base text-neutral-400 mb-1">
+                                <div className="flex justify-between text-base text-[#B0B0B0] mb-1">
                                     <span>Coerência</span>
                                     <span>88%</span>
                                 </div>
-                                <div className="h-1.5 bg-neutral-900 rounded-full overflow-hidden">
-                                    <div className="h-full bg-neutral-400 w-[88%]"></div>
+                                <div className="h-1.5 bg-[#444444] rounded-full overflow-hidden">
+                                    <div className="h-full bg-[#B0B0B0] w-[88%]"></div>
                                 </div>
                             </div>
 
                             <div>
-                                <div className="flex justify-between text-base text-neutral-400 mb-1">
+                                <div className="flex justify-between text-base text-[#B0B0B0] mb-1">
                                     <span>Índice de Criatividade</span>
                                     <span>92%</span>
                                 </div>
-                                <div className="h-1.5 bg-neutral-900 rounded-full overflow-hidden">
-                                    <div className="h-full bg-neutral-600 w-[92%]"></div>
+                                <div className="h-1.5 bg-[#444444] rounded-full overflow-hidden">
+                                    <div className="h-full bg-[#888888] w-[92%]"></div>
                                 </div>
                             </div>
 
                             <div className="pt-4 mt-4 border-t border-neutral-900 flex gap-4">
-                                <div className="bg-neutral-900 px-3 py-2 rounded text-xs text-neutral-400">
-                                    <span className="block text-white font-medium mb-1">Tempo de Resposta</span>
+                                <div className="bg-[#444444] px-3 py-2 rounded text-xs text-[#B0B0B0]">
+                                    <span className="block text-[#E0E0E0] font-medium mb-1">Tempo de Resposta</span>
                                     0.4s
                                 </div>
-                                <div className="bg-neutral-900 px-3 py-2 rounded text-xs text-neutral-400">
-                                    <span className="block text-white font-medium mb-1">Tokens Usado</span>
+                                <div className="bg-[#444444] px-3 py-2 rounded text-xs text-[#B0B0B0]">
+                                    <span className="block text-[#E0E0E0] font-medium mb-1">Tokens Usado</span>
                                     4,120
                                 </div>
                             </div>
@@ -70,9 +70,9 @@ const AdvancedAnalytics: React.FC = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-3xl font-medium tracking-tight text-white mb-6">Insights Profundos e Métricas</h2>
+                    <h2 className="text-3xl font-medium tracking-tight text-[#E0E0E0] mb-6">Insights Profundos e Métricas</h2>
 
-                    <p className="text-neutral-400 mb-6 leading-relaxed">
+                    <p className="text-[#B0B0B0] mb-6 leading-relaxed">
                         Ao final do debate, o Sistema do IAArena oferece análise detalhada de desempenho. Entenda o fluxo de argumentos, profundidade de raciocínio e pontuações de criatividade.
                     </p>
 
@@ -83,10 +83,10 @@ const AdvancedAnalytics: React.FC = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.1 }}
                         >
-                            <FontAwesomeIcon icon={faFileCode} className="w-5 h-5 text-neutral-500 mt-0.5" />
+                            <FontAwesomeIcon icon={faFileCode} className="w-5 h-5 text-[#444444] mt-0.5" />
                             <div>
-                                <h4 className="text-white text-sm font-medium">Exportar Dados</h4>
-                                <p className="text-xs text-neutral-500 mt-1">PDF, JSON, Markdown</p>
+                                <h4 className="text-[#E0E0E0] text-sm font-medium">Exportar Dados</h4>
+                                <p className="text-xs text-[#444444] mt-1">PDF, JSON, Markdown</p>
                             </div>
                         </motion.div>
 
@@ -96,10 +96,10 @@ const AdvancedAnalytics: React.FC = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
-                            <FontAwesomeIcon icon={faCodeBranch} className="w-5 h-5 text-neutral-500 mt-0.5" />
+                            <FontAwesomeIcon icon={faCodeBranch} className="w-5 h-5 text-[#444444] mt-0.5" />
                             <div>
-                                <h4 className="text-white text-sm font-medium">Diagramas de Fluxo</h4>
-                                <p className="text-xs text-neutral-500 mt-1">Visualize caminhos de argumentos</p>
+                                <h4 className="text-[#E0E0E0] text-sm font-medium">Diagramas de Fluxo</h4>
+                                <p className="text-xs text-[#444444] mt-1">Visualize caminhos de argumentos</p>
                             </div>
                         </motion.div>
                     </div>

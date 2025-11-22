@@ -91,7 +91,7 @@ const Navigations: React.FC = () => {
                         href="https://www.youtube.com/@IAArena-b8b" 
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-white text-black text-sm font-medium px-4 py-2 rounded-full border border-neutral-300 hover:bg-neutral-200 transition-colors"
+                        className="bg-[#E0E0E0] text-[#121212] text-sm font-medium px-4 py-2 rounded-full border border-[#444444] hover:bg-[#B0B0B0] transition-colors"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >

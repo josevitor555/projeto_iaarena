@@ -14,7 +14,7 @@ import FooterCTA from '../components/FooterCTA';
 // Main component
 const Home = () => {
   return (
-    <div className="relative bg-black text-neutral-300 selection:bg-neutral-800 selection:text-white">
+    <div className="relative bg-[#121212] text-[#B0B0B0] selection:bg-[#444444] selection:text-[#E0E0E0]">
       <Navigations />
       <HeroSection />
       <AboutSection />

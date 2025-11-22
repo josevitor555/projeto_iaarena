@@ -172,7 +172,7 @@ const DemonstrationSection: React.FC = () => {
     }, [isModalOpen]);
 
     return (
-        <section id="demonstration" className="py-20 text-gray-300 antialiased relative overflow-x-hidden"
+        <section id="demonstration" className="py-20 text-[#B0B0B0] antialiased relative overflow-x-hidden"
             style={{
                 backgroundSize: "100px 100px",
                 backgroundImage: `
@@ -196,7 +196,7 @@ const DemonstrationSection: React.FC = () => {
 
                 {/* Subtitle */}
                 <motion.p 
-                    className="text-lg md:text-xl text-gray-500 mt-6 text-center font-normal max-w-2xl mx-auto leading-relaxed"
+                    className="text-lg md:text-xl text-[#B0B0B0] mt-6 text-center font-normal max-w-2xl mx-auto leading-relaxed"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -214,7 +214,7 @@ const DemonstrationSection: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
                     {/* Parent Container: Straight borders (rounded-none or sm), Gray Tone (grayscale + border colors) */}
-                    <div className="w-full aspect-21/9 border border-neutral-800 bg-[#111111] flex items-center justify-center relative group overflow-hidden">
+                    <div className="w-full aspect-21/9 border border-neutral-800 bg-[#121212] flex items-center justify-center relative group overflow-hidden">
                         
                         {/* Decorative grid inside container */}
                         <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(#333 1px, transparent 1px)", backgroundSize: "20px 20px" }}></div>
@@ -329,7 +329,7 @@ const DemonstrationSection: React.FC = () => {
                             onClick={(e) => e.stopPropagation()}
                         >
                             <button
-                                className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
+                                className="absolute -top-12 right-0 text-[#E0E0E0] hover:text-[#B0B0B0] transition-colors"
                                 onClick={closeModal}
                                 aria-label="Fechar visualização"
                             >
